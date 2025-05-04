@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      php: 8.1
+    commands:
+      - echo Installing Composer Dependencies...
+      - composer install --no-dev --prefer-dist --optimize-autoloader
+  build:
+    commands:
+      - echo Build complete
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: no
