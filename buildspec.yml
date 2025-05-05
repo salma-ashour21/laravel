@@ -10,5 +10,5 @@ phases:
 
   build:
     commands:
-      - echo "Running Laravel tests..."
+      - echo "Running tests..."
       - php artisan test
